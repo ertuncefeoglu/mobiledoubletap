@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
+		newDiv {
+			background-color: Red;
+		}
+	</style>
+</head>
+
+<body>
+		<!-- style="text-align: center; border:1px dotted black; color:green;" -->
+		<div id="device" ></div>
+		<div style="display:none">
+			1. kısım 
+			http://www.thesoftwaresimpleton.com/blog/2017/11/05/accessible-react/
+		</div>
+		<br>
+		<br>
+		<div style="display:none" id="divID" class ="doubleTap">
+			2. kısım
+			https://github.com/ElectronNET/Electron.NET
+		</div>
+		<br>
+		<br>
+		<div style="display:none">
+			3. kısım
+			https://www.class-central.com/mooc/9570/coursera-building-database-applications-in-php
+		</div>
+		
+		<div>
+		<table class="grid" cellspacing="0" cellpadding="4" align="Center" rules="all" bordercolor="Gainsboro" border="1" id="DataGrid" style="background-color:White;border-color:Gainsboro;border-width:1px;border-style:Solid;font-family:Verdana;font-size:X-Small;width:100%;border-collapse:collapse;CURSOR: hand">
+			<tr nowrap="nowrap" style="color:White;background-color:#006666;font-weight:bold;">
+				<td><a href="javascript:__doPostBack(&#39;DataGrid$_ctl2$_ctl1&#39;,&#39;&#39;)" style="color:White;">İrsaliye Tipi</a></td><td><a href="javascript:__doPostBack(&#39;DataGrid$_ctl2$_ctl2&#39;,&#39;&#39;)" style="color:White;">İrsaliye No</a></td><td><a href="javascript:__doPostBack(&#39;DataGrid$_ctl2$_ctl3&#39;,&#39;&#39;)" style="color:White;">Müşteri Doküman No</a></td><td><a href="javascript:__doPostBack(&#39;DataGrid$_ctl2$_ctl4&#39;,&#39;&#39;)" style="color:White;">Müşteri Kodu</a></td><td><a href="javascript:__doPostBack(&#39;DataGrid$_ctl2$_ctl5&#39;,&#39;&#39;)" style="color:White;">Müşteri Adı</a></td><td><a href="javascript:__doPostBack(&#39;DataGrid$_ctl2$_ctl6&#39;,&#39;&#39;)" style="color:White;">Tipi</a></td><td><a href="javascript:__doPostBack(&#39;DataGrid$_ctl2$_ctl7&#39;,&#39;&#39;)" style="color:White;">Tarih</a></td><td><a href="javascript:__doPostBack(&#39;DataGrid$_ctl2$_ctl8&#39;,&#39;&#39;)" style="color:White;">Saat</a></td><td><a href="javascript:__doPostBack(&#39;DataGrid$_ctl2$_ctl9&#39;,&#39;&#39;)" style="color:White;">Depo</a></td><td><a href="javascript:__doPostBack(&#39;DataGrid$_ctl2$_ctl11&#39;,&#39;&#39;)" style="color:White;">İptal mi?</a></td><td>İptal Nedeni</td>
+			</tr><tr class="doubleTap"  style="color:#333333;background-color:White;CURSOR: hand">
+				<td style="width:180px;">Teslimat İrsaliyesi</td><td class="irs" style="width:80px;">A236872</td><td style="width:80px;">&nbsp;</td><td style="width:75px;">500900</td><td>CEKMEKOY MM MIGROS</td><td>
+														<span id="DataGrid__ctl3_Label1">Dergi</span>
+													</td><td style="width:75px;">08.11.2017</td><td style="width:50px;">17:46:41</td><td style="width:150px;">701730-1</td><td style="width:50px;">&nbsp;<img tooltip="İptal Et" src="../images/history.gif" onclick="CancelDispatch(2175184);"></img></td><td>&nbsp;</td>
+			</tr><tr class="doubleTap" onclick="setSelectedRowId(&#39;2175127&#39;, &#39;Teslimat İrsaliyesi&#39;); highlightrow(this)" ondblclick="ShowDetail(&#39;2175127&#39;)" style="color:#333333;background-color:White;CURSOR: hand">
+				<td style="width:180px;">Teslimat İrsaliyesi</td><td class="irs" style="width:80px;">A236815</td><td style="width:80px;">&nbsp;</td><td style="width:75px;">500901</td><td>CEKMEKOY MM MIGROS</td><td>
+														<span id="DataGrid__ctl4_Label1">Gazete</span>
+													</td><td style="width:75px;">08.11.2017</td><td style="width:50px;">17:46:33</td><td style="width:150px;">701730-1</td><td style="width:50px;">&nbsp;<img tooltip="İptal Et" src="../images/history.gif" onclick="CancelDispatch(2175127);"></img></td><td>&nbsp;</td>
+			</tr><tr class="doubleTap" onclick="setSelectedRowId(&#39;2179537&#39;, &#39;Satış İade İrsaliyesi&#39;); highlightrow(this)" ondblclick="ShowDetail(&#39;2179537&#39;)" style="color:#333333;background-color:White;CURSOR: hand">
+				<td style="width:180px;">Satış İade İrsaliyesi</td><td style="width:80px;">I002179537</td><td style="width:80px;">965841</td><td style="width:75px;">500901</td><td>CEKMEKOY MM MIGROS</td><td>
+														<span id="DataGrid__ctl5_Label1">Gazete</span>
+													</td><td style="width:75px;">08.11.2017</td><td style="width:50px;">15:29:19</td><td style="width:150px;">701730-1</td><td style="width:50px;">&nbsp;<img tooltip="İptal Et" src="../images/history.gif" onclick="CancelDispatch(2179537);"></img></td><td>&nbsp;</td>
+			</tr><tr class="doubleTap" onclick="setSelectedRowId(&#39;2179541&#39;, &#39;Satış İade İrsaliyesi&#39;); highlightrow(this)" ondblclick="ShowDetail(&#39;2179541&#39;)" style="color:#333333;background-color:White;CURSOR: hand">
+				<td style="width:180px;">Satış İade İrsaliyesi</td><td style="width:80px;">I002179541</td><td style="width:80px;">803506</td><td style="width:75px;">500901</td><td>CEKMEKOY MM MIGROS</td><td>
+														<span id="DataGrid__ctl6_Label1">Gazete</span>
+													</td><td style="width:75px;">08.11.2017</td><td style="width:50px;">15:29:55</td><td style="width:150px;">701730-1</td><td style="width:50px;">&nbsp;<img tooltip="İptal Et" src="../images/history.gif" onclick="CancelDispatch(2179541);"></img></td><td>&nbsp;</td>
+			</tr><tr class="doubleTap" onclick="setSelectedRowId(&#39;2175194&#39;, &#39;Teslimat İrsaliyesi&#39;); highlightrow(this)" ondblclick="ShowDetail(&#39;2175194&#39;)" style="color:#333333;background-color:White;CURSOR: hand">
+				<td style="width:180px;">Teslimat İrsaliyesi</td><td style="width:80px;">A236882</td><td style="width:80px;">&nbsp;</td><td style="width:75px;">501659</td><td>KURTKOY KIPA</td><td>
+														<span id="DataGrid__ctl7_Label1">Dergi</span>
+													</td><td style="width:75px;">08.11.2017</td><td style="width:50px;">17:46:41</td><td style="width:150px;">701730-1</td><td style="width:50px;">&nbsp;<img tooltip="İptal Et" src="../images/history.gif" onclick="CancelDispatch(2175194);"></img></td><td>&nbsp;</td>
+			</tr><tr class="doubleTap" onclick="setSelectedRowId(&#39;2175142&#39;, &#39;Teslimat İrsaliyesi&#39;); highlightrow(this)" ondblclick="ShowDetail(&#39;2175142&#39;)" style="color:#333333;background-color:White;CURSOR: hand">
+				<td style="width:180px;">Teslimat İrsaliyesi</td><td style="width:80px;">A236830</td><td style="width:80px;">&nbsp;</td><td style="width:75px;">501660</td><td>KURTKOY KIPA</td><td>
+														<span id="DataGrid__ctl8_Label1">Gazete</span>
+													</td><td style="width:75px;">08.11.2017</td><td style="width:50px;">17:46:35</td><td style="width:150px;">701730-1</td><td style="width:50px;">&nbsp;<img tooltip="İptal Et" src="../images/history.gif" onclick="CancelDispatch(2175142);"></img></td><td>&nbsp;</td>
+			</tr><tr class="doubleTap" onclick="setSelectedRowId(&#39;2179070&#39;, &#39;Satış İade İrsaliyesi&#39;); highlightrow(this)" ondblclick="ShowDetail(&#39;2179070&#39;)" style="color:#333333;background-color:White;CURSOR: hand">
+				<td style="width:180px;">Satış İade İrsaliyesi</td><td style="width:80px;">I002179070</td><td style="width:80px;">876713</td><td style="width:75px;">501660</td><td>KURTKOY KIPA</td><td>
+														<span id="DataGrid__ctl9_Label1">Gazete</span>
+													</td><td style="width:75px;">08.11.2017</td><td style="width:50px;">15:14:11</td><td style="width:150px;">701730-1</td><td style="width:50px;">&nbsp;<img tooltip="İptal Et" src="../images/history.gif" onclick="CancelDispatch(2179070);"></img></td><td>&nbsp;</td>
+			</tr><tr nowrap="nowrap" align="center" style="color:White;background-color:#336666;">
+				<td colspan="11"><span><< Önceki&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<a href="javascript:__doPostBack(&#39;DataGrid$_ctl204$_ctl1&#39;,&#39;&#39;)" style="color:White;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sonraki >></a></td>
+			</tr>
+		</table>
+									
+	</div></td>
+							</tr>
+						</table>
+
+		
+		</div>
+
+		<script src="mobileDetect.js"></script>
+		<script src="doubleTap.js"></script>	
+		<script type="text/javascript">
+		
+		function ShowDetail(deger) {
+			alert('çift tıklama eventi çalıştı : ' + deger);
+		}
+		
+		(function($){
+		
+			var tapTwice = function(event, elem){
+					/* 
+					alert("tapTwice");
+					dev = document.getElementById("device");
+					dev.innerHTML = JSON.stringify(elem);
+					var m = elem.find('.irs').text();
+					alert('m' + m);
+					*/
+					elem.dblclick();
+			};
+			
+			var tapOnce = function(event, elem) {
+					/* alert("tapOnce");
+					dev = document.getElementById("device");
+					dev.innerHTML = JSON.stringify(elem);
+					*/
+					var m = elem.find('.irs').text();
+					alert('m' + m);
+			};
+			
+			if (isMobileDevice()) {
+					var elm = $('.doubleTap');
+					var param = 'http://www.google.com.tr';
+					doubleTap(elm, tapTwice, tapOnce);
+					//dblclick(elm, param);
+			}
+			else {
+					var elm = $('.doubleTap');
+					var param = 'http://www.google.com.tr';
+					dblclick(elm, param);
+			}
+		})(jQuery);
+		
+		</script>
+		<div id="device" ></div>
+
+</body>
+
+</html>
